@@ -71,5 +71,4 @@ export default {
   .modal.sale .actions a {
     color: white;
   }
-
 </style>
