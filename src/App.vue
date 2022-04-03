@@ -33,7 +33,7 @@ export default {
   components: { Modal },
   data() {
     return {
-      title: 'My First Vue App!',
+      title: 'Modal test app',
       showModal: false,
       showModalTwo: false,
     }
@@ -64,7 +64,7 @@ h1 {
   padding-bottom: 10px;
 }
 button {
-  background: #bbb;
+  background: #6500406b;
   padding: 10px;
   border: none;
   border-radius: 4px;
