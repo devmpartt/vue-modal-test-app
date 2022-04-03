@@ -1,27 +1,28 @@
 <template>
   <h1>{{ title }}</h1>
-  <p>Welcome...</p>
+  <p>click to open</p>
 
   <teleport to="#modals" v-if="showModal">
     <Modal theme="sale" @close="toggleModal">
+     
       <template v-slot:links>
         <a href="#">sign up now</a>
         <a href="#">more info</a>
       </template>
-      <h1>Ninja Givaway!</h1>
-      <p>Grab your ninja swag for half price!</p>
+      <h1>Thanks for clicking</h1>
+      <p>You can now exit by clicking outside the box</p>
     </Modal>
   </teleport>  
 
   <teleport to="#modals" v-if="showModalTwo">
     <Modal @close="toggleModalTwo">
-      <h1>Sign up to the Newsletter</h1>
-      <p>For updates and promo codes!</p>
+      <h1>Thanks for clicking</h1>
+      <p>You can now exit by clicking outside the box</p>
     </Modal>
   </teleport>
 
-  <button @click.alt="toggleModal">open modal (alt click)</button>
-  <button @click="toggleModalTwo">open modal 2</button>
+  <button @click.alt="toggleModal">modal 1 (alt click)</button>
+  <button @click="toggleModalTwo">modal 2</button>
 </template>
 
 <script>

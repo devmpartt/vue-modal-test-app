@@ -36,7 +36,7 @@ export default {
     height: 100%;
   }
   .modal h1 {
-    color: #03cfb4;
+    color: #650040;
     border: none;
     padding: 0;
   }
@@ -59,7 +59,7 @@ export default {
 
   /* sale styles */
   .modal.sale {
-    background: crimson;
+    background: #650040;
     color: white;
   }
   .modal.sale h1 {
